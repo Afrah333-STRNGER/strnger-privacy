@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — STRNGER</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --rose: #E8526A;
+    --rose-dark: #C73A52;
+    --bg: #FAFAF9;
+    --card: #FFFFFF;
+    --text: #1A1A2E;
+    --muted: #6B7280;
+    --border: #F0EEF6;
+    --accent-bg: #FFF5F7;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.75; font-size: 16px; }
+
+  header {
+    background: linear-gradient(135deg, #0F0818 0%, #1A1030 60%, #0D1520 100%);
+    padding: 56px 24px 48px; text-align: center; position: relative; overflow: hidden;
+  }
+  header::before {
+    content: ''; position: absolute; top: -60px; left: 50%; transform: translateX(-50%);
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(232,82,106,0.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .logo { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 20px; }
+  .logo-icon {
+    width: 40px; height: 40px;
+    background: linear-gradient(135deg, var(--rose), var(--rose-dark));
+    border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 20px;
+  }
+  .logo-text { font-family: 'DM Serif Display', serif; font-size: 22px; color: white; letter-spacing: 0.04em; }
+  header h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); color: white; margin-bottom: 12px; font-weight: 400; }
+  header p { color: rgba(255,255,255,0.55); font-size: 14px; }
+
+  .notice-banner {
+    background: var(--accent-bg); border-left: 4px solid var(--rose);
+    margin: 40px auto; max-width: 780px; padding: 20px 24px;
+    border-radius: 0 12px 12px 0; font-size: 14px; color: #7A2030; line-height: 1.7;
+  }
+  .notice-banner strong { color: var(--rose-dark); }
+
+  main { max-width: 780px; margin: 0 auto; padding: 0 24px 80px; }
+
+  /* Quick Summary Box */
+  .summary-box {
+    background: var(--card); border: 1px solid var(--border); border-radius: 20px;
+    padding: 28px 32px; margin-bottom: 32px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.04);
+  }
+  .summary-box h2 {
+    font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: var(--rose);
+    text-transform: uppercase; margin-bottom: 16px; border: none; padding: 0;
+  }
+  .summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media(max-width:540px){ .summary-grid { grid-template-columns: 1fr; } }
+  .summary-item {
+    background: #FAFAF9; border: 1px solid var(--border); border-radius: 12px;
+    padding: 12px 16px; font-size: 13px; line-height: 1.6;
+  }
+  .summary-item strong { display: block; color: var(--text); font-weight: 700; margin-bottom: 2px; }
+  .summary-item span { color: var(--muted); }
+
+  .toc {
+    background: var(--card); border: 1px solid var(--border); border-radius: 20px;
+    padding: 28px 32px; margin-bottom: 48px; box-shadow: 0 2px 20px rgba(0,0,0,0.04);
+  }
+  .toc h2 { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: var(--rose); text-transform: uppercase; margin-bottom: 16px; border: none; padding: 0; }
+  .toc ol { padding-left: 20px; columns: 2; gap: 0; }
+  @media(max-width:560px){ .toc ol { columns: 1; } }
+  .toc li { margin-bottom: 8px; font-size: 14px; break-inside: avoid; }
+  .toc a { color: var(--text); text-decoration: none; opacity: 0.75; transition: opacity 0.15s; }
+  .toc a:hover { opacity: 1; color: var(--rose); }
+
+  section { margin-bottom: 52px; scroll-margin-top: 24px; }
+  section h2 {
+    font-family: 'DM Serif Display', serif; font-size: 24px; font-weight: 400;
+    color: var(--text); margin-bottom: 16px; padding-bottom: 12px;
+    border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 10px;
+  }
+  section h2 .emoji { font-size: 20px; font-style: normal; }
+  section h3 { font-size: 15px; font-weight: 700; color: var(--text); margin: 24px 0 10px; }
+  p { margin-bottom: 14px; color: #374151; font-size: 15px; }
+  ul, ol { padding-left: 20px; margin-bottom: 14px; }
+  li { margin-bottom: 8px; color: #374151; font-size: 15px; }
+
+  .highlight {
+    background: var(--accent-bg); border: 1px solid rgba(232,82,106,0.15);
+    border-radius: 14px; padding: 18px 22px; margin: 20px 0;
+    font-size: 14px; line-height: 1.75; color: #5A2030;
+  }
+  .highlight.green { background: #F0FDF4; border-color: rgba(74,222,128,0.25); color: #166534; }
+  .highlight.blue  { background: #EFF6FF; border-color: rgba(96,176,255,0.25); color: #1E3A5F; }
+  .highlight strong { font-weight: 700; }
+
+  .data-table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 20px 0; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); }
+  .data-table th { background: #F9F7FF; padding: 12px 16px; text-align: left; font-weight: 700; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--border); }
+  .data-table td { padding: 12px 16px; border-bottom: 1px solid var(--border); vertical-align: top; color: #374151; line-height: 1.6; }
+  .data-table tr:last-child td { border-bottom: none; }
+  .data-table tr:hover td { background: #FAFAF9; }
+
+  .pill { display: inline-block; padding: 2px 10px; border-radius: 100px; font-size: 11px; font-weight: 700; letter-spacing: 0.03em; }
+  .pill-yes { background: #DCFCE7; color: #166534; }
+  .pill-no  { background: #FEE2E2; color: #991B1B; }
+
+  .delete-card {
+    background: linear-gradient(135deg, #0F0818, #1A1030);
+    border-radius: 20px; padding: 28px 32px; color: white; margin: 20px 0;
+  }
+  .delete-card h3 { color: white; margin-top: 0; margin-bottom: 12px; font-size: 16px; }
+  .delete-step {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .delete-step:last-of-type { border-bottom: none; }
+  .step-num {
+    width: 24px; height: 24px; min-width: 24px;
+    background: var(--rose); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 700; color: white; margin-top: 2px;
+  }
+  .delete-step p { color: rgba(255,255,255,0.75); font-size: 14px; margin: 0; }
+  .delete-card .form-link {
+    margin-top: 16px; padding: 14px 18px;
+    background: rgba(232,82,106,0.12); border: 1px solid rgba(232,82,106,0.3);
+    border-radius: 12px; font-size: 13px; color: rgba(255,255,255,0.7); line-height: 1.6;
+  }
+  .delete-card .form-link a { color: var(--rose); font-weight: 600; word-break: break-all; }
+
+  .contact-card { background: linear-gradient(135deg, #0F0818, #1A1030); border-radius: 20px; padding: 32px; color: white; margin-top: 24px; }
+  .contact-card h3 { color: white; margin-top: 0; margin-bottom: 8px; }
+  .contact-card p  { color: rgba(255,255,255,0.65); margin-bottom: 6px; font-size: 14px; }
+  .contact-card a  { color: var(--rose); text-decoration: none; font-weight: 600; }
+
+  footer { text-align: center; padding: 32px 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); }
+  footer strong { color: var(--rose); }
+
+  @media(max-width:600px){
+    .data-table { font-size: 13px; }
+    .data-table th, .data-table td { padding: 10px 12px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-icon">🌸</div>
+    <span class="logo-text">STRNGER</span>
+  </div>
+  <h1>Privacy Policy</h1>
+  <p>Effective date: March 22, 2026 &nbsp;·&nbsp; Last updated: March 22, 2026</p>
+</header>
+
+<main>
+
+  <div class="notice-banner">
+    <strong>Important:</strong> STRNGER is an anonymous emotional wellness and peer support app. It is <strong>not a medical service, mental health provider, therapy platform, or crisis intervention service</strong>. If you are experiencing a mental health emergency, please contact emergency services or a crisis helpline immediately.
+  </div>
+
+  <!-- QUICK SUMMARY -->
+  <div class="summary-box">
+    <h2>At a glance — what we collect</h2>
+    <div class="summary-grid">
+      <div class="summary-item">
+        <strong>📧 Email address</strong>
+        <span>Stored by Firebase Authentication for login. Never shown to other users.</span>
+      </div>
+      <div class="summary-item">
+        <strong>🌍 Country</strong>
+        <span>You select this at signup. Stored in your profile. Never shown to other users.</span>
+      </div>
+      <div class="summary-item">
+        <strong>💬 Messages &amp; content</strong>
+        <span>End-to-end encrypted. Only you and your conversation partner can read them.</span>
+      </div>
+      <div class="summary-item">
+        <strong>📱 Device &amp; app data</strong>
+        <span>Device ID (for security) and crash logs (for stability). Not linked to your identity.</span>
+      </div>
+    </div>
+    <p style="margin-top:16px; margin-bottom:0; font-size:13px; color:var(--muted);">
+      We do <strong>not</strong> collect your real name, phone number, location, contacts, photos, or any data that identifies you to other users. We never sell your data.
+    </p>
+  </div>
+
+  <!-- TOC -->
+  <div class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#not-medical">Not a Medical App</a></li>
+      <li><a href="#who-we-are">Who We Are</a></li>
+      <li><a href="#what-we-collect">What We Collect</a></li>
+      <li><a href="#how-we-use">How We Use Data</a></li>
+      <li><a href="#encryption">Encryption &amp; Security</a></li>
+      <li><a href="#sharing">Data Sharing</a></li>
+      <li><a href="#retention">Data Retention</a></li>
+      <li><a href="#your-rights">Your Rights &amp; Deletion</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#third-party">Third-Party Services</a></li>
+      <li><a href="#changes">Policy Changes</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </div>
+
+  <!-- 1 -->
+  <section id="overview">
+    <h2><span class="emoji">📋</span> 1. Overview</h2>
+    <p>STRNGER ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains what information we collect, how we use it, and the choices you have regarding your data when you use the STRNGER mobile application.</p>
+    <p>By using STRNGER, you agree to the practices described in this policy. If you do not agree, please do not use the app.</p>
+    <div class="highlight green">
+      <strong>Our core privacy principle:</strong> STRNGER is built on anonymity. Your real identity is never shown to other users. We collect the minimum data necessary to operate the service safely, and we never sell your data to anyone.
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section id="not-medical">
+    <h2><span class="emoji">⚕️</span> 2. Not a Medical App</h2>
+    <p>STRNGER is a peer-to-peer anonymous support and wellness journaling application. It is <strong>not</strong> a medical device, mental health treatment platform, therapy service, or clinical intervention tool of any kind.</p>
+    <ul>
+      <li>We do not provide medical advice, diagnosis, or treatment</li>
+      <li>We do not employ licensed therapists, counselors, psychiatrists, or any medical professionals</li>
+      <li>Conversations between users are anonymous peer support — not professional mental health care</li>
+      <li>Mood tracking is a personal self-reflection tool with no clinical or diagnostic purpose</li>
+      <li>Crisis resource features display publicly available helpline numbers only — they do not constitute crisis intervention or emergency response</li>
+    </ul>
+    <div class="highlight">
+      <strong>If you are in crisis:</strong> Please contact emergency services (999 in the UAE) or a crisis helpline immediately. STRNGER is not a substitute for professional help.
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section id="who-we-are">
+    <h2><span class="emoji">🏢</span> 3. Who We Are</h2>
+    <p>STRNGER is an independent mobile application. For all privacy-related questions or data requests, please use the contact information provided in Section 13.</p>
+    <p>Our backend infrastructure is hosted on Google Firebase in the European Union (eur3 region), meaning your data is stored on servers located in Europe.</p>
+  </section>
+
+  <!-- 4 -->
+  <section id="what-we-collect">
+    <h2><span class="emoji">📊</span> 4. What We Collect</h2>
+
+    <h3>4.1 Information you provide</h3>
+    <table class="data-table">
+      <thead>
+        <tr><th>Data</th><th>How it is stored</th><th>Visible to other users</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Email address</strong></td>
+          <td>Securely stored by Firebase Authentication for account login and email verification purposes. We do not display or share your email with other users. Internally, we also store a SHA-256 hash of your email for fraud prevention.</td>
+          <td><span class="pill pill-no">Never</span></td>
+        </tr>
+        <tr>
+          <td><strong>Password</strong></td>
+          <td>Managed entirely by Firebase Authentication using industry-standard secure hashing. We never see or store your password in plaintext.</td>
+          <td><span class="pill pill-no">Never</span></td>
+        </tr>
+        <tr>
+          <td><strong>Country</strong></td>
+          <td>Selected by you at signup. Stored in your profile.</td>
+          <td><span class="pill pill-no">Never</span></td>
+        </tr>
+        <tr>
+          <td><strong>Nickname &amp; avatar emoji</strong></td>
+          <td>Auto-generated randomly at account creation. You do not choose them. Used as your anonymous identity inside the app.</td>
+          <td><span class="pill pill-yes">Shown anonymously</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>4.2 Content you create</h3>
+    <table class="data-table">
+      <thead>
+        <tr><th>Data</th><th>Encrypted</th><th>Who can read it</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Chat messages</strong></td>
+          <td><span class="pill pill-yes">AES-256-GCM E2E</span></td>
+          <td>Only the two participants in the conversation</td>
+        </tr>
+        <tr>
+          <td><strong>Journal entries (Keep mode)</strong></td>
+          <td><span class="pill pill-yes">AES-256-GCM</span></td>
+          <td>Only you</td>
+        </tr>
+        <tr>
+          <td><strong>Express entries — Burn / Float / Dissolve</strong></td>
+          <td>Never stored or transmitted</td>
+          <td>No one. Text is cleared from the device immediately after the release animation. It never reaches our servers.</td>
+        </tr>
+        <tr>
+          <td><strong>Garden memories</strong></td>
+          <td>Stored in your private subcollection</td>
+          <td>Only you</td>
+        </tr>
+        <tr>
+          <td><strong>Time capsules</strong></td>
+          <td><span class="pill pill-yes">AES-256-GCM</span></td>
+          <td>Only you, after the unlock date you set</td>
+        </tr>
+        <tr>
+          <td><strong>Mood check-ins</strong></td>
+          <td>A numerical score (1–5). No text is stored.</td>
+          <td>Only you</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>4.3 Automatically collected data</h3>
+    <ul>
+      <li><strong>Device ID:</strong> Used by Firebase App Check to verify your app installation is genuine and to prevent automated abuse. Not linked to your personal identity.</li>
+      <li><strong>Online/offline status:</strong> Stored temporarily in Firebase Realtime Database to show presence indicators. Automatically cleared when you disconnect or close the app.</li>
+      <li><strong>Crash reports and diagnostics:</strong> Collected by Firebase to help us identify and fix bugs. This data is anonymised and not linked to your account.</li>
+      <li><strong>IP address:</strong> Processed by Firebase infrastructure during normal HTTPS operation. We do not log or store IP addresses independently.</li>
+    </ul>
+
+    <h3>4.4 What we do NOT collect</h3>
+    <div class="highlight green">
+      We do not collect your real name, phone number, precise or approximate location, contacts, photos, biometric data, browsing history, or any information that could directly identify you to other users.<br><br>
+      <strong>Crisis detection runs entirely on your device.</strong> Any crisis-related keywords detected in typed text are processed locally and are never transmitted to our servers or stored anywhere.
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section id="how-we-use">
+    <h2><span class="emoji">⚙️</span> 5. How We Use Your Data</h2>
+    <ul>
+      <li><strong>Account management:</strong> Creating and maintaining your account, verifying your email, and authenticating your sessions</li>
+      <li><strong>App functionality:</strong> Enabling anonymous matching, encrypted messaging, and wellness features</li>
+      <li><strong>Safety and security:</strong> Detecting abuse, preventing spam, enforcing community guidelines, and processing user reports</li>
+      <li><strong>Fraud prevention:</strong> Using hashed identifiers to prevent banned accounts from re-registering</li>
+      <li><strong>Service improvement:</strong> Understanding how features are used in aggregate — never at the individual level — to improve the app</li>
+      <li><strong>Communications:</strong> Sending account-related emails such as email verification and security notices</li>
+    </ul>
+    <p>We do <strong>not</strong> use your data for advertising, behavioural profiling, or any commercial purpose beyond operating the app. We display no advertisements.</p>
+  </section>
+
+  <!-- 6 -->
+  <section id="encryption">
+    <h2><span class="emoji">🔒</span> 6. Encryption &amp; Security</h2>
+    <div class="highlight blue">
+      <strong>End-to-end encryption:</strong> Chat messages, journal entries, and time capsules are encrypted on your device using AES-256-GCM before being transmitted or stored. Encryption keys are derived from your account credentials and stored in your device's secure storage (Android Encrypted SharedPreferences / iOS Keychain). We do not hold the decryption keys and cannot read your encrypted content.
+    </div>
+    <ul>
+      <li>All data is transmitted over TLS — encrypted in transit</li>
+      <li>Messages are AES-256-GCM encrypted end-to-end — encrypted at rest</li>
+      <li>Email addresses are stored by Firebase Authentication under their security standards; we additionally store only a one-way SHA-256 hash for fraud prevention</li>
+      <li>Screenshots are blocked within the app on supported Android devices</li>
+      <li>Firebase App Check verifies every request comes from a genuine installation of our app</li>
+      <li>Accounts with multiple verified reports are automatically suspended for review</li>
+      <li>Messages containing personal contact information (phone numbers, email addresses, social media handles) are automatically blocked before sending</li>
+    </ul>
+    <p>While we take extensive security measures, no system is completely immune to risk. We encourage you to use a strong, unique password.</p>
+  </section>
+
+  <!-- 7 -->
+  <section id="sharing">
+    <h2><span class="emoji">🤝</span> 7. Data Sharing</h2>
+    <p><strong>We do not sell your data. We do not share your personal data with advertisers, data brokers, or marketing companies.</strong></p>
+
+    <h3>Infrastructure provider</h3>
+    <p>We use Google Firebase (Google LLC) as our backend infrastructure. Firebase processes data on our behalf under Google's data processing terms. Services used include Firebase Authentication, Cloud Firestore, Realtime Database, and App Check. Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>.</p>
+
+    <h3>Legal requirements</h3>
+    <p>We may disclose data if required by applicable law, court order, or governmental authority. We will notify you of such requests where legally permitted.</p>
+
+    <h3>Safety</h3>
+    <p>In cases of a credible and imminent threat to the life of any person, we may share relevant information with the appropriate authorities. This is the only circumstance under which user data may be shared without legal compulsion.</p>
+
+    <h3>Anonymised aggregates</h3>
+    <p>We may publish anonymised, aggregate statistics that cannot be traced back to any individual user.</p>
+  </section>
+
+  <!-- 8 -->
+  <section id="retention">
+    <h2><span class="emoji">🗓️</span> 8. Data Retention</h2>
+    <table class="data-table">
+      <thead>
+        <tr><th>Data type</th><th>Retention period</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Chat messages</strong></td><td>24 hours by default. Extended if both users agree, or until the conversation is ended.</td></tr>
+        <tr><td><strong>Journal entries</strong></td><td>Until you delete them individually or delete your account.</td></tr>
+        <tr><td><strong>Garden memories</strong></td><td>Until you delete them individually or delete your account.</td></tr>
+        <tr><td><strong>Time capsules</strong></td><td>Until you delete your account.</td></tr>
+        <tr><td><strong>Mood check-ins</strong></td><td>Until you delete your account.</td></tr>
+        <tr><td><strong>Account &amp; profile data</strong></td><td>Deleted immediately upon account deletion request, except as noted below.</td></tr>
+        <tr><td><strong>Email address (Firebase Auth)</strong></td><td>Deleted from Firebase Authentication immediately upon account deletion.</td></tr>
+        <tr><td><strong>Email hash (fraud prevention)</strong></td><td>Retained for up to 30 days after account deletion to prevent re-registration of banned accounts, then permanently purged.</td></tr>
+        <tr><td><strong>Crash logs &amp; diagnostics</strong></td><td>90 days, managed by Firebase. Anonymised.</td></tr>
+      </tbody>
+    </table>
+    <div class="highlight">
+      <strong>Deletion summary:</strong> Most user data (account, messages, journals, memories, capsules, mood history) is deleted immediately upon account deletion. Limited hashed identifiers used for fraud prevention are retained for up to 30 days, then permanently deleted.
+    </div>
+  </section>
+
+  <!-- 9 -->
+  <section id="your-rights">
+    <h2><span class="emoji">⚖️</span> 9. Your Rights &amp; Deletion</h2>
+    <p>You have the following rights regarding your personal data:</p>
+    <ul>
+      <li><strong>Access:</strong> Request a copy of the data we hold about you</li>
+      <li><strong>Correction:</strong> Request correction of inaccurate data</li>
+      <li><strong>Deletion:</strong> Delete your account and all associated data at any time</li>
+      <li><strong>Portability:</strong> Request your data in a portable format</li>
+      <li><strong>Objection:</strong> Object to certain processing of your data</li>
+    </ul>
+
+    <h3>How to delete your account</h3>
+    <div class="delete-card">
+      <h3>🗑️ Option 1 — Delete directly in the app</h3>
+      <div class="delete-step">
+        <div class="step-num">1</div>
+        <p>Open STRNGER and go to the <strong>Profile</strong> tab (bottom navigation)</p>
+      </div>
+      <div class="delete-step">
+        <div class="step-num">2</div>
+        <p>Scroll to the bottom and tap <strong>"Delete My Account &amp; All Data"</strong></p>
+      </div>
+      <div class="delete-step">
+        <div class="step-num">3</div>
+        <p>Check the confirmation box and enter your password</p>
+      </div>
+      <div class="delete-step">
+        <div class="step-num">4</div>
+        <p>Tap <strong>"Delete Everything"</strong> — deletion is immediate and permanent</p>
+      </div>
+
+      <div class="form-link">
+        <strong>Option 2 — Request deletion via form</strong><br>
+        If you cannot access the app, you can request account deletion by submitting this form:<br>
+        <a href="https://forms.gle/iq5sQt1WpTL2PoKY7" target="_blank" rel="noopener noreferrer">https://forms.gle/iq5sQt1WpTL2PoKY7</a><br>
+        We will process your request within 7 business days.
+      </div>
+    </div>
+
+    <p style="margin-top:20px;"><strong>What gets deleted:</strong> Your account credentials, nickname, avatar, country, all conversations and messages, all journal entries, garden memories, time capsules, and mood history. See Section 8 for the limited data retained for fraud prevention.</p>
+
+    <h3>Partial data deletion</h3>
+    <p>You can delete individual journal entries, garden memories, and time capsules from within the app without deleting your entire account.</p>
+
+    <p>To exercise rights other than deletion, contact us at <a href="mailto:afrahyasin333@gmail.com">afrahyasin333@gmail.com</a>. We will respond within 30 days.</p>
+  </section>
+
+  <!-- 10 -->
+  <section id="children">
+    <h2><span class="emoji">👶</span> 10. Children</h2>
+    <p>STRNGER is intended for users who are <strong>18 years of age or older</strong>. We do not knowingly collect personal information from anyone under 18. The app displays an age confirmation screen at signup.</p>
+    <p>If we become aware that a user under 18 has created an account, we will immediately delete their account and all associated data. If you believe a minor has registered, please contact us immediately at <a href="mailto:afrahyasin333@gmail.com">afrahyasin333@gmail.com</a>.</p>
+    <p>This app is <strong>not directed at children under 13</strong> under any circumstances.</p>
+  </section>
+
+  <!-- 11 -->
+  <section id="third-party">
+    <h2><span class="emoji">🔗</span> 11. Third-Party Services</h2>
+    <p>STRNGER uses the following third-party services. Each is governed by its own privacy policy:</p>
+    <table class="data-table">
+      <thead>
+        <tr><th>Service</th><th>Purpose</th><th>Provider</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Firebase Authentication</td><td>Secure account creation and sign-in</td><td>Google LLC</td></tr>
+        <tr><td>Cloud Firestore</td><td>Encrypted data storage</td><td>Google LLC</td></tr>
+        <tr><td>Firebase Realtime Database</td><td>Online presence detection</td><td>Google LLC</td></tr>
+        <tr><td>Firebase App Check</td><td>App integrity verification and abuse prevention</td><td>Google LLC</td></tr>
+        <tr><td>Firebase Crashlytics</td><td>Anonymised crash reporting and diagnostics</td><td>Google LLC</td></tr>
+      </tbody>
+    </table>
+    <p>We do not use any advertising SDKs, social media SDKs, or third-party analytics services beyond Firebase.</p>
+  </section>
+
+  <!-- 12 -->
+  <section id="changes">
+    <h2><span class="emoji">📝</span> 12. Policy Changes</h2>
+    <p>We may update this Privacy Policy from time to time. When we make material changes, we will notify you by updating the "Last updated" date at the top of this page and displaying an in-app notice on your next login.</p>
+    <p>Continued use of the app after changes take effect constitutes acceptance of the updated policy.</p>
+  </section>
+
+  <!-- 13 -->
+  <section id="contact">
+    <h2><span class="emoji">📬</span> 13. Contact Us</h2>
+    <p>For privacy questions, data requests, or to report a concern:</p>
+    <div class="contact-card">
+      <h3>STRNGER Privacy</h3>
+      <p>📧 Email: <a href="mailto:afrahyasin333@gmail.com">afrahyasin333@gmail.com</a></p>
+      <p>🗑️ Delete account form: <a href="https://forms.gle/iq5sQt1WpTL2PoKY7" target="_blank" rel="noopener noreferrer">forms.gle/iq5sQt1WpTL2PoKY7</a></p>
+      <p>📍 Data stored in: European Union (Firebase eur3 region)</p>
+      <p style="margin-top:16px; font-size:13px; color:rgba(255,255,255,0.4);">We aim to respond to all privacy inquiries within 30 days.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 <strong>STRNGER</strong> · All rights reserved</p>
+  <p style="margin-top:6px;">Privacy Policy · Last updated March 22, 2026</p>
+</footer>
+
+</body>
+</html>
