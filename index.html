@@ -108,6 +108,7 @@
   .pill { display: inline-block; padding: 2px 10px; border-radius: 100px; font-size: 11px; font-weight: 700; letter-spacing: 0.03em; }
   .pill-yes { background: #DCFCE7; color: #166534; }
   .pill-no  { background: #FEE2E2; color: #991B1B; }
+  .pill-neutral { background: #F3F4F6; color: #374151; }
 
   .delete-card {
     background: linear-gradient(135deg, #0F0818, #1A1030);
@@ -155,13 +156,13 @@
     <span class="logo-text">STRNGER</span>
   </div>
   <h1>Privacy Policy</h1>
-  <p>Effective date: March 22, 2026 &nbsp;·&nbsp; Last updated: March 22, 2026</p>
+  <p>Effective date: March 22, 2026 &nbsp;·&nbsp; Last updated: September 2, 2026</p>
 </header>
 
 <main>
 
   <div class="notice-banner">
-    <strong>Important:</strong> STRNGER is an anonymous emotional wellness and peer support app. It is <strong>not a medical service, mental health provider, therapy platform, or crisis intervention service</strong>. If you are experiencing a mental health emergency, please contact emergency services or a crisis helpline immediately.
+    <strong>Important:</strong> STRNGER is an anonymous emotional wellness and peer support app. It is <strong>not a medical service, mental health provider, therapy platform, or crisis intervention service</strong> — including the optional AI voice companion. If you are experiencing a mental health emergency, please contact emergency services or a crisis helpline immediately.
   </div>
 
   <!-- QUICK SUMMARY -->
@@ -183,6 +184,10 @@
       <div class="summary-item">
         <strong>📱 Device &amp; app data</strong>
         <span>Device ID (for security) and crash logs (for stability). Not linked to your identity.</span>
+      </div>
+      <div class="summary-item">
+        <strong>🎙️ AI voice companion (optional)</strong>
+        <span>Your spoken words, converted to text on your device, are sent to Google's Gemini API to generate a response. Not stored by STRNGER.</span>
       </div>
     </div>
     <p style="margin-top:16px; margin-bottom:0; font-size:13px; color:var(--muted);">
@@ -213,7 +218,7 @@
   <!-- 1 -->
   <section id="overview">
     <h2><span class="emoji">📋</span> 1. Overview</h2>
-    <p>STRNGER ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains what information we collect, how we use it, and the choices you have regarding your data when you use the STRNGER mobile application.</p>
+    <p>STRNGER ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains what information we collect, how we use it, and the choices you have regarding your data when you use the STRNGER mobile application, including the optional AI voice companion feature.</p>
     <p>By using STRNGER, you agree to the practices described in this policy. If you do not agree, please do not use the app.</p>
     <div class="highlight green">
       <strong>Our core privacy principle:</strong> STRNGER is built on anonymity. Your real identity is never shown to other users. We collect the minimum data necessary to operate the service safely, and we never sell your data to anyone.
@@ -223,11 +228,12 @@
   <!-- 2 -->
   <section id="not-medical">
     <h2><span class="emoji">⚕️</span> 2. Not a Medical App</h2>
-    <p>STRNGER is a peer-to-peer anonymous support and wellness journaling application. It is <strong>not</strong> a medical device, mental health treatment platform, therapy service, or clinical intervention tool of any kind.</p>
+    <p>STRNGER is a peer-to-peer anonymous support and wellness journaling application. It is <strong>not</strong> a medical device, mental health treatment platform, therapy service, or clinical intervention tool of any kind — and neither is the optional AI voice companion.</p>
     <ul>
       <li>We do not provide medical advice, diagnosis, or treatment</li>
       <li>We do not employ licensed therapists, counselors, psychiatrists, or any medical professionals</li>
       <li>Conversations between users are anonymous peer support — not professional mental health care</li>
+      <li>The AI voice companion is an automated feature, not a person, and does not provide therapy, diagnosis, or treatment</li>
       <li>Mood tracking is a personal self-reflection tool with no clinical or diagnostic purpose</li>
       <li>Crisis resource features display publicly available helpline numbers only — they do not constitute crisis intervention or emergency response</li>
     </ul>
@@ -279,7 +285,7 @@
     <h3>4.2 Content you create</h3>
     <table class="data-table">
       <thead>
-        <tr><th>Data</th><th>Encrypted</th><th>Who can read it</th></tr>
+        <tr><th>Data</th><th>Encrypted / Stored</th><th>Who can read it</th></tr>
       </thead>
       <tbody>
         <tr>
@@ -312,6 +318,11 @@
           <td>A numerical score (1–5). No text is stored.</td>
           <td>Only you</td>
         </tr>
+        <tr>
+          <td><strong>AI voice companion transcripts</strong></td>
+          <td><span class="pill pill-neutral">Not stored</span></td>
+          <td>Processed in real time by our AI service provider (Google, via the Gemini API) to generate a response, then discarded. This content is not end-to-end encrypted the way messages and journal entries are, because generating a response requires sending the text off-device — see Sections 6 and 7.</td>
+        </tr>
       </tbody>
     </table>
 
@@ -326,7 +337,7 @@
     <h3>4.4 What we do NOT collect</h3>
     <div class="highlight green">
       We do not collect your real name, phone number, precise or approximate location, contacts, photos, biometric data, browsing history, or any information that could directly identify you to other users.<br><br>
-      <strong>Crisis detection runs entirely on your device.</strong> Any crisis-related keywords detected in typed text are processed locally and are never transmitted to our servers or stored anywhere.
+      <strong>Crisis detection for typed text runs entirely on your device.</strong> Any crisis-related keywords detected in typed text are processed locally and are never transmitted to our servers or stored anywhere. This is different from the AI voice companion feature (Section 4.2), where your spoken words — converted to text — are intentionally sent to our AI service provider so it can generate a response.
     </div>
   </section>
 
@@ -336,6 +347,7 @@
     <ul>
       <li><strong>Account management:</strong> Creating and maintaining your account, verifying your email, and authenticating your sessions</li>
       <li><strong>App functionality:</strong> Enabling anonymous matching, encrypted messaging, and wellness features</li>
+      <li><strong>AI voice companion:</strong> Sending your spoken words, as text, to our AI service provider so it can generate a spoken response, if you choose to use this optional feature</li>
       <li><strong>Safety and security:</strong> Detecting abuse, preventing spam, enforcing community guidelines, and processing user reports</li>
       <li><strong>Fraud prevention:</strong> Using hashed identifiers to prevent banned accounts from re-registering</li>
       <li><strong>Service improvement:</strong> Understanding how features are used in aggregate — never at the individual level — to improve the app</li>
@@ -349,6 +361,9 @@
     <h2><span class="emoji">🔒</span> 6. Encryption &amp; Security</h2>
     <div class="highlight blue">
       <strong>End-to-end encryption:</strong> Chat messages, journal entries, and time capsules are encrypted on your device using AES-256-GCM before being transmitted or stored. Encryption keys are derived from your account credentials and stored in your device's secure storage (Android Encrypted SharedPreferences / iOS Keychain). We do not hold the decryption keys and cannot read your encrypted content.
+    </div>
+    <div class="highlight">
+      <strong>AI voice companion is handled differently:</strong> to generate a spoken response, your words (as text) must be readable by our AI service provider, Google. This text is transmitted over TLS (encrypted in transit) but is not end-to-end encrypted the way your messages and journal entries are, since the AI provider needs to process it. It is not stored by STRNGER after the response is generated.
     </div>
     <ul>
       <li>All data is transmitted over TLS — encrypted in transit</li>
@@ -369,6 +384,9 @@
 
     <h3>Infrastructure provider</h3>
     <p>We use Google Firebase (Google LLC) as our backend infrastructure. Firebase processes data on our behalf under Google's data processing terms. Services used include Firebase Authentication, Cloud Firestore, Realtime Database, and App Check. Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>.</p>
+
+    <h3>AI service provider (voice companion)</h3>
+    <p>If you choose to use the optional AI voice companion, your spoken words are converted to text on your device and sent to Google's Gemini API to generate a spoken response. This text is used solely to generate that response and is not stored by STRNGER. Use of the Gemini API is governed by Google's own terms and privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>. This feature is entirely optional — you can use STRNGER's peer-to-peer support features without ever using the voice companion.</p>
 
     <h3>Legal requirements</h3>
     <p>We may disclose data if required by applicable law, court order, or governmental authority. We will notify you of such requests where legally permitted.</p>
@@ -393,6 +411,7 @@
         <tr><td><strong>Garden memories</strong></td><td>Until you delete them individually or delete your account.</td></tr>
         <tr><td><strong>Time capsules</strong></td><td>Until you delete your account.</td></tr>
         <tr><td><strong>Mood check-ins</strong></td><td>Until you delete your account.</td></tr>
+        <tr><td><strong>AI voice companion transcripts</strong></td><td>Not stored. Processed in real time to generate a response, then discarded immediately.</td></tr>
         <tr><td><strong>Account &amp; profile data</strong></td><td>Deleted immediately upon account deletion request, except as noted below.</td></tr>
         <tr><td><strong>Email address (Firebase Auth)</strong></td><td>Deleted from Firebase Authentication immediately upon account deletion.</td></tr>
         <tr><td><strong>Email hash (fraud prevention)</strong></td><td>Retained for up to 30 days after account deletion to prevent re-registration of banned accounts, then permanently purged.</td></tr>
@@ -400,7 +419,7 @@
       </tbody>
     </table>
     <div class="highlight">
-      <strong>Deletion summary:</strong> Most user data (account, messages, journals, memories, capsules, mood history) is deleted immediately upon account deletion. Limited hashed identifiers used for fraud prevention are retained for up to 30 days, then permanently deleted.
+      <strong>Deletion summary:</strong> Most user data (account, messages, journals, memories, capsules, mood history) is deleted immediately upon account deletion. AI voice companion transcripts are never stored in the first place. Limited hashed identifiers used for fraud prevention are retained for up to 30 days, then permanently deleted.
     </div>
   </section>
 
@@ -413,7 +432,7 @@
       <li><strong>Correction:</strong> Request correction of inaccurate data</li>
       <li><strong>Deletion:</strong> Delete your account and all associated data at any time</li>
       <li><strong>Portability:</strong> Request your data in a portable format</li>
-      <li><strong>Objection:</strong> Object to certain processing of your data</li>
+      <li><strong>Objection:</strong> Object to certain processing of your data, including opting out of using the AI voice companion at any time simply by not using that feature</li>
     </ul>
 
     <h3>How to delete your account</h3>
@@ -475,6 +494,7 @@
         <tr><td>Firebase Realtime Database</td><td>Online presence detection</td><td>Google LLC</td></tr>
         <tr><td>Firebase App Check</td><td>App integrity verification and abuse prevention</td><td>Google LLC</td></tr>
         <tr><td>Firebase Crashlytics</td><td>Anonymised crash reporting and diagnostics</td><td>Google LLC</td></tr>
+        <tr><td>Gemini API</td><td>Generates AI voice companion responses from your spoken words (converted to text). Optional feature — only used if you choose to speak with the companion.</td><td>Google LLC</td></tr>
       </tbody>
     </table>
     <p>We do not use any advertising SDKs, social media SDKs, or third-party analytics services beyond Firebase.</p>
@@ -504,7 +524,7 @@
 
 <footer>
   <p>© 2026 <strong>STRNGER</strong> · All rights reserved</p>
-  <p style="margin-top:6px;">Privacy Policy · Last updated March 22, 2026</p>
+  <p style="margin-top:6px;">Privacy Policy · Last updated September 2, 2026</p>
 </footer>
 
 </body>
